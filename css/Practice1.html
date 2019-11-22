@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+<!-- 单元格里的内容居上（vertical-align:top;）-->
+
+<style>
+    .a {
+        text-align:center;
+        vertical-align: top;
+    }
+    .aggreeTickets {
+        
+        width:40px;
+        background-color: lightgray;
+    }
+    div.b{
+        float:left;
+    }
+    div.c{
+        float:right;
+    }
+    div.aa{
+        width:50%;
+    }
+    #img{
+        width:30%;
+        float:left;
+        margin-right:5px;
+        }
+    #ccc{
+        color:gray;
+    }
+    table {
+        width:50%;
+        height:200px;
+        border-top-color: gray;
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-top-color: gray;
+        border-bottom-color: gray;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: gray;
+    }
+</style>
+</head>
+<body>
+    <div class=" aa">
+        <div class="b">
+            <img src="./img/1.png" />
+            <span><strong>最新动态</strong></span>
+        </div>
+        <div class="c">
+            <img src="./img/2.png" />
+            <span><strong>设置</strong></span>
+        </div>
+    </div>
+
+
+        <table>
+        <tr>
+            <td width="10%" height="50px" >
+                <img src="./img/4.png" />
+               
+            </td>
+            <td>
+                热门回答，来自 机械 关注话<font color="blue">题</font>
+                <br/>
+                <font color="darkblue"><strong>人类史上令人叹为观止的极限精度制造成果有哪些？</strong></font>
+            </td>
+        </tr>
+        <tr>
+            <td class="a">
+                <div class="aggreeTickets">6551</div>
+            </td>
+            <td>
+                <strong>Vincent Fu,</strong> Materials Science, PhD
+                <br/>
+                <img id="img" src="./img/6.png" />
+                说到精度，就不得不提在材料学中最重要的一个方面：表征。要想研究一种材料性能，握在手里把玩
+                是远远不够的，就算你拿出放大镜离近了看，也只能看到表面的一些坑坑洼洼，而为了知晓一种材料的
+                纤维结构，科学家至少要下到纳米级（放大千倍），如果要获得更深…<font color="blue">显示全部</font>
+            </td>
+            
+        </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <div id="ccc">
+                        <img src="./img/7.png" />关注问题
+                        <img src="./img/8.png" />876条评论
+                        <img src="./img/9.png" />作者保留权利
+                    </div>
+                </td>
+            </tr>
+    </table>
+</body>
+</html>

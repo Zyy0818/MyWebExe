@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+<style>
+    .total{
+        width:670px;
+        border-width:1px;
+        border-color:lightblue;
+        border-style:solid;
+        margin:0px auto;
+    }
+    .a{
+        text-align:left;
+        font-weight:bold;
+        color:darkblue;
+        background-color:lightblue;
+    }
+    .b{
+        text-align:left;
+       
+        color:darkblue;
+        background-color:lightblue;
+    }
+    .one{
+        width:120px;
+       font-weight:bold;
+       padding:0px 10px;
+        }
+    .two{
+        width:150px;
+        
+    }
+    .three{
+        
+        background-color:lightgray;
+    }
+    input{
+        background-color: lightgray;
+    }
+</style>
+</head>
+<body>
+    <div class="total">
+        <div style="color:red">请注意，带有“*”的项目必须填写。</div>
+    <table class="table">
+        <tr>
+            <td colspan="3"><div class="a">请填写您的用户名</div>
+                
+            </td>
+            </tr>
+        <tr>
+            <td>
+                <div class="one"><span style="color:red">*</span>通行证用户名：</div>
+            </td>
+            <td class="two"><input type="text" size="15" value="" placeholder="请输入用户名">
+                <div style="color:darkblue;text-decoration-line:underline; font-size:smaller" >查看用户名是否被占用</div>
+            </td>
+            <td class="three">用户名由a~z的英文字母（不区分大小写），<strong>0~9</strong>的数字、点、<strong>减</strong>号或
+                <strong>下划线</strong>组成，长度为3~18个
+                字符，只能以数字或者字母开头和结尾，例如：kyzy_001。
+            </td>
+        </tr>
+         <tr>
+            <td colspan="3"><div class="b"><strong>请填写安全设置：</strong>（安全设置用于验证账号和找回密码）</div>
+                
+            </td>
+            </tr>
+        <tr>
+            <td colspan="3"><div style="color:red">以下信息对保证您账号的安全极为重要，请您务必认真填写。</div>
+                
+            </td>
+            </tr>
+        <tr>
+            <td><div class="one"><span style="color:red">*</span>输入登录密码：
+                <br />
+                <span style="color:red">*</span>登录密码确认：</div>
+            </td>
+            <td><input type="text" size="15" value="" placeholder=""><br />
+                <input type="text" size="15" value="" placeholder="">
+            </td>
+            <td class="three">密码长度为<strong>6~16</strong>位，区分字母大小写，登陆密码可以由字母、
+                数字、特殊字符组成。【<span style="color:darkblue;text-decoration-line:underline; font-size:smaller" >更多说明</span>】
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"><hr style="border:2px solid lightblue; "/></td>
+        </tr>
+        <tr>
+            <td><div class="one"><span style="color:red">*</span>密码提示问题：
+                <br />
+                <span style="color:red">*</span>密码提示答案：</div>
+            </td>
+            <td><input type="text" size="15" value="" placeholder=""><br />
+                <input type="text" size="15" value="" placeholder="">
+            </td>
+            <td class="three">当您忘记密码时可以由此找回密码，例如，问题是“我的哥哥是谁？”，答案为：
+                “peter2”。问题长度不大于36个字符，一个汉字占两个字符，答案长度在6~30位之间，
+                区分大小写。【<span style="color:darkblue;text-decoration-line:underline; font-size:smaller" >更多说明</span>】
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"><hr style="border:2px solid lightblue; "/></td>
+        </tr>
+        <tr>
+            <td><div class="one"><span style="color:red">*</span>输入安全码：
+                <br />
+                <span style="color:red">*</span>安全码确认：</div>
+            </td>
+            <td><input type="text" size="15" value="" placeholder=""><br />
+                <input type="text" size="15" value="" placeholder="">
+            </td>
+            <td class="three">安全码是您找回密码的重要途径，安全码长度为6~16位，区分字母大小写，
+                由字母、数字、特殊字符组成。<span style="color=red">特别提醒：安全码一旦设定，
+                    将不可自行修改。</span>【<span style="color:darkblue;text-decoration-line:underline; font-size:smaller" >更多说明</span>】
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"><hr style="border:2px solid lightblue; "/></td>
+        </tr>
+        <tr>
+            <td colspan="3"><div style="text-align:center ">
+                <input type="submit" value="提交表单"></div></td>
+        </tr>
+    </table>
+        </div>
+</body>
+</html>
