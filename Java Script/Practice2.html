@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+    function get(){
+        var a = document.getElementById("1").value;
+        var b = document.getElementById("2").value;
+        var c = document.getElementById("3").value;
+        var d = document.getElementById("4").value;
+        var e = document.getElementById("5").value;
+        var f = document.getElementById("6").value;
+        var g = document.getElementById("7").value;
+        document.getElementById("Text").value=a+"最大"+b+c+"倒闭了，王八蛋老板"+d+"吃喝嫖赌，欠下了"+e+"个亿，带着他的小姨子跑了！我们没有办法，拿着"
++f+"抵工资！原价都是一"+g+"多、两"+g+"多、三"+g+"多的"+f+"，现在全部只卖二十块，统统只要二十块!"+d+"王八蛋，你不是人！我们辛辛苦苦给你干了大半年，你不发工资，你还我血汗钱！还我血汗钱！";
+}
+    </script>
+</head>
+<body>
+    <table >
+        <tr>
+            <td>
+                <input type="text" value="地名:" size="15"/></td>
+            <td>
+                <input id="1" type="text" size="20" /></td>
+            <td><input type="text" value="公司类型:" size="15"/></td>
+            <td>
+                <input id="2" type="text" size="20" /></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" value="公司名称:" size="15"/></td>
+            <td>
+                <input id="3" type="text" size="20" /></td>
+            <td><input type="text" value="老板姓名:" size="15"/></td>
+            <td>
+                <input id="4" type="text" size="20" /></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" value="money:" size="15"/></td>
+            <td>
+                <input id="5" type="text" size="20" /></td>
+            <td><input type="text" value="产品：" size="15"/></td>
+            <td>
+                <input id="6" type="text" size="20" /></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" value="价格计量单位：" size="15"/></td>
+            <td>
+                <input id="7" type="text" size="20" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>&nbsp;&nbsp; <input type="button" value="生成" style="width: 95px" onclick="get()" /></td>
+        </tr>
+    </table>
+    <textarea id="Text" cols="100" rows="10"></textarea>
+    
+</body>
+</html>

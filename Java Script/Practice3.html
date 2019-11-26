@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>字符串替换工具</title>
+<style>
+    table{
+        width:300px;
+        margin:0 200px;
+    }
+    #tihuan{
+        width:15px;
+        text-align:center;
+    }
+</style>
+    <script>
+    function change(){
+    var x=document.getElementById("text").value;
+    var y = document.getElementById("text1").value;
+    var z = document.getElementById("text2").value;
+    var regS = new RegExp(y,"g");
+	var num = x.replace(regS, z);
+
+    document.getElementById("Text").value=num;
+}
+    </script>
+</head>
+<body>
+    <table >
+        <tr>
+            <td >源字符串：</td>
+            <td><textarea id="text"style="width:120px"></textarea></td>
+            
+        </tr>
+        <tr>
+            <td>查询：</td>
+            <td>
+                <input id="text1" type="text" size="20"/></td>
+            
+        </tr>
+        <tr>
+            <td>替换为：</td>
+            <td><input id="text2" type="text" size="20"/></td>
+           
+        </tr>
+        <tr>
+            <td>替换结果：</td>
+            <td><textarea id="Text" style="width:120px"></textarea></td>
+            
+        </tr>
+        <tr>
+            <td colspan="2" id="tihuan"><input type="button" value="替换" onclick=change()></td>
+        </tr>
+    </table>
+</body>
+</html>

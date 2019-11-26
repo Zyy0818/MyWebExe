@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>计算年龄</title>
+<script>
+    function cal()
+    {
+        var x=document.getElementById("year").value;
+        var y=document.getElementById("month").value;
+        var z=document.getElementById("day").value;
+        if((y==11&&z>26)||(y>11))
+            {document.getElementById("result").innerHTML=2019-x;}
+        else
+            document.getElementById("result").innerHTML=2019-x+1;
+    }
+</script>
+    <style>
+        .a{
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">请输入出生年月日</div>
+    <span class ="a">年份</span><select id="year"><option>1988</option><option>1989</option><option>1990</option></select>
+    <span class="a">月份</span><select id="month"><option>4</option><option>5</option><option>6</option></select>
+        <span class="a">日</span><select id="day"><option>17</option><option>18</option><option>19</option></select>
+<br />
+<input type="button" value="计算年龄"  onclick="cal()"/>
+    <br />
+<span class="a">今年</span><span id="result"></span><span class="a">&nbsp; 岁</span>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>数组排序</title>
+<script>
+    var x = new Array(3,1,4,1,5,9,2,6);
+    document.write("数组x是："+x);
+    document.write("<br>");
+    x.sort();
+    var y = new Array();
+    var i;
+    var j=1;
+    y[0]=x[0];
+    for(i=1;i<x.length;i++)
+    {   
+        if(x[i]!=x[i-1])
+        y[j++]=x[i];
+           
+    }
+    document.write("使用sort排序后的无重复数据的数组x是："+y);
+</script>
+</head>
+<body>
+    
+
+</body>
+</html>

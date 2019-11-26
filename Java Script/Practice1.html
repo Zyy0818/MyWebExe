@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>科学计数法表示结果</title>
+    <script>
+        function get(){
+            var x = document.getElementById("Text1").value;
+            var y = document.getElementById("Text2").value;
+            var z = parseInt(x)*parseInt(y);
+            document.getElementById("Text3").value=z.toExponential ();
+}
+    </script>
+</head>
+<body>
+    <input id="Text1" type="text" /> * <input id="Text2" type="text" /> = <input id="Text3" type="text" />  
+    	<input type="button" value="运算" onclick="get()" >
+
+</body>
+</html>
